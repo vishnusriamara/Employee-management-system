@@ -1,0 +1,41 @@
+
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="row justify-content-center">
+
+<div class="col-md-6">
+
+<div class="card shadow">
+
+<div class="card-header text-center bg-gradient-primary text-white">
+Edit Employee
+</div>
+
+<div class="card-body">
+
+<form method="POST" action="/edit_employee">
+
+<input type="hidden" name="eid" value="{{employee[0]}}">
+
+<input class="form-control mb-3" type="text" name="ename" value="{{employee[1]}}">
+
+<input class="form-control mb-3" type="text" name="edept" value="{{employee[2]}}">
+
+<input class="form-control mb-3" type="text" name="esalary" value="{{employee[3]}}">
+
+<input class="form-control mb-3" type="text" name="ephone" value="{{employee[4]}}">
+
+<button class="btn bg-gradient-primary text-white w-100">Update Employee</button>
+
+</form>
+
+</div>
+</div>
+
+</div>
+</div>
+
+{% endblock %}

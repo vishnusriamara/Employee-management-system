@@ -1,0 +1,50 @@
+
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="row justify-content-center">
+
+<div class="col-md-6">
+
+<div class="card shadow">
+
+<div class="card-header text-center bg-gradient-primary text-white">
+Add Employee
+</div>
+
+<div class="card-body">
+
+<form method="POST">
+
+<div class="mb-3">
+<input type="text" name="eid" class="form-control" placeholder="Employee ID" required>
+</div>
+
+<div class="mb-3">
+<input type="text" name="ename" class="form-control" placeholder="Employee Name" required>
+</div>
+
+<div class="mb-3">
+<input type="text" name="edept" class="form-control" placeholder="Department">
+</div>
+
+<div class="mb-3">
+<input type="text" name="esalary" class="form-control" placeholder="Salary">
+</div>
+
+<div class="mb-3">
+<input type="text" name="ephone" class="form-control" placeholder="Phone">
+</div>
+
+<button class="btn bg-gradient-primary text-white w-100">Add Employee</button>
+
+</form>
+
+</div>
+</div>
+</div>
+</div>
+
+{% endblock %}

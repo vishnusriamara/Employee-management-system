@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2 class="text-center mb-4">Welcome {{session['user']}}</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="card dashboard-card bg-gradient-primary text-white">
+<div class="card-body text-center">
+<i class="bi bi-people-fill display-4 icon-animate"></i>
+<h4 class="mt-2">Total Employees</h4>
+<h2>{{total}}</h2>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card dashboard-card bg-gradient-success text-white">
+<div class="card-body text-center">
+<i class="bi bi-diagram-3-fill display-4 icon-animate"></i>
+<h4 class="mt-2">Departments</h4>
+<h2>{{dept}}</h2>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card dashboard-card bg-gradient-warning text-white">
+<div class="card-body text-center">
+<i class="bi bi-currency-rupee display-4 icon-animate"></i>
+<h4 class="mt-2">Highest Salary</h4>
+<h2>{{max_salary}}</h2>
+</div>
+</div>
+</div>
+
+</div>
+
+
+<br><br>
+
+
+<div class="row g-4">
+
+<div class="col-md-6">
+
+<div class="card shadow text-center dashboard-card">
+
+<div class="card-body">
+
+<h5>Add New Employee</h5>
+
+<a href="/add_employee" class="btn btn-success">Add Employee</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-md-6">
+
+<div class="card shadow text-center dashboard-card">
+
+<div class="card-body">
+
+<h5>View Employee List</h5>
+
+<a href="/view_employee" class="btn btn-primary">View Employees</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+{% endblock %}

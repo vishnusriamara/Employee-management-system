@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container mt-4">
+
+<div class="row justify-content-center">
+
+<div class="col-md-6">
+
+<div class="card shadow profile-edit-card">
+
+<div class="card-header text-center text-white">
+
+<h4>Edit Profile</h4>
+
+</div>
+
+<div class="card-body">
+
+<form method="POST" enctype="multipart/form-data">
+
+<div class="mb-3">
+<label>Name</label>
+<input type="text" name="username" value="{{user[1]}}" class="form-control">
+</div>
+
+<div class="mb-3">
+<label>Email</label>
+<input type="email" name="email" value="{{user[4]}}" class="form-control">
+</div>
+
+<div class="mb-3">
+<label>Role</label>
+<input type="text" name="role" value="{{user[3]}}" class="form-control">
+</div>
+
+<div class="mb-3">
+<label>Profile Photo</label>
+<input type="file" name="profile_pic" class="form-control">
+</div>
+
+<button class="btn btn-gradient w-100">
+
+Update Profile
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+{% endblock %}

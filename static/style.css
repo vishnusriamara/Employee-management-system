@@ -1,0 +1,326 @@
+/* BODY */
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:linear-gradient(120deg,#f6f9fc,#eef2ff);
+}
+
+
+/* NAVBAR */
+
+.gradient-navbar{
+background:linear-gradient(45deg,#667eea,#764ba2);
+padding:6px 0;
+}
+
+/* EMS LOGO TEXT */
+
+.navbar-brand{
+font-size:28px;   /* EMS SIZE */
+font-weight:bold;
+color:white !important;
+letter-spacing:1px;
+}
+
+/* NAVBAR LOGO */
+
+/* NAVBAR LOGO CIRCLE */
+
+.logo-img{
+width:35px;
+height:35px;
+border-radius:50%;
+object-fit:cover;
+border:2px solid white;
+box-shadow:0 0 6px rgba(255,255,255,0.6);
+}
+
+/* NAVBAR LINKS */
+
+.navbar .nav-link{
+color:white !important;
+margin:6px 8px;
+font-weight:500;
+font-size:15px;
+}
+
+.navbar .nav-link:hover{
+text-decoration:underline;
+}
+
+
+/* PAGE CONTAINER */
+
+.container{
+padding:30px;
+}
+
+
+/* FLASH MESSAGES */
+
+.flash{
+padding:10px;
+margin:10px;
+border-radius:5px;
+text-align:center;
+font-weight:bold;
+}
+
+.success{
+background:#d4edda;
+color:#155724;
+}
+
+.danger{
+background:#f8d7da;
+color:#721c24;
+}
+
+.info{
+background:#d1ecf1;
+color:#0c5460;
+}
+
+
+/* DASHBOARD CARDS */
+
+.dashboard-card{
+border-radius:15px;
+transition:0.3s;
+cursor:pointer;
+}
+
+.dashboard-card:hover{
+transform:translateY(-8px);
+box-shadow:0px 10px 25px rgba(14,62,220,0.4);
+}
+
+
+/* GRADIENT CARDS */
+
+.bg-gradient-primary{
+background:linear-gradient(45deg,#36d1dc,#5b86e5);
+}
+
+.bg-gradient-success{
+background:linear-gradient(45deg,#11998e,#38ef7d);
+}
+
+.bg-gradient-warning{
+background:linear-gradient(45deg,#f7971e,#ffd200);
+}
+
+
+/* BUTTON STYLE */
+
+.btn-gradient{
+background:linear-gradient(45deg,#ff512f,#dd2476);
+color:white;
+border:none;
+border-radius:8px;
+padding:6px 14px;
+}
+
+.btn-gradient:hover{
+opacity:0.9;
+color:white;
+}
+
+
+/* FORM STYLE */
+
+form{
+max-width:500px;
+margin:auto;
+}
+
+input{
+border-radius:8px;
+border:1px solid #ccc;
+padding:8px;
+transition:0.2s;
+}
+
+input:focus{
+border-color:#667eea;
+box-shadow:0px 0px 5px rgba(102,126,234,0.5);
+}
+
+
+/* SEARCH BAR FIX */
+
+.input-group input{
+width:auto;
+flex:1;
+}
+
+
+/* TABLE */
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th,td{
+padding:10px;
+border:1px solid #ccc;
+}
+
+table tbody tr:hover{
+background:#f1f5ff;
+transition:0.2s;
+}
+
+
+/* FOOTER */
+
+.gradient-footer{
+background:linear-gradient(45deg,#667eea,#764ba2);
+color:white;
+}
+
+
+/* ICON ANIMATION */
+
+.icon-animate{
+transition:transform 0.3s ease;
+}
+
+.icon-animate:hover{
+transform:scale(1.3) rotate(5deg);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width:768px){
+
+.navbar{
+text-align:center;
+}
+
+.navbar .nav-link{
+display:block;
+margin:5px 0;
+}
+
+.navbar-brand{
+font-size:24px;
+}
+
+}
+
+/* CONTACT PAGE GRADIENT CARD */
+
+.contact-card{
+background: linear-gradient(135deg,#667eea,#764ba2,#ff758c);
+border-radius:20px;
+color:white;
+}
+
+/* CONTACT ICON */
+
+.contact-icon{
+font-size:50px;
+color:white;
+}
+
+/* INPUT STYLE */
+
+.contact-input{
+border-radius:10px;
+border:none;
+padding:10px;
+}
+
+/* INPUT FOCUS */
+
+.contact-input:focus{
+box-shadow:0px 0px 8px rgba(255,255,255,0.7);
+border:none;
+}
+
+/* CONTACT BUTTON */
+
+.btn-contact{
+background:linear-gradient(45deg,#ff512f,#dd2476);
+color:white;
+border:none;
+padding:10px 25px;
+border-radius:30px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn-contact:hover{
+transform:scale(1.05);
+box-shadow:0px 8px 20px rgba(0,0,0,0.3);
+color:white;
+}
+
+.contact-card{
+animation: floatCard 4s ease-in-out infinite alternate;
+}
+
+@keyframes floatCard{
+
+0%{
+transform:translateY(0px);
+}
+
+100%{
+transform:translateY(-8px);
+}
+
+}
+
+/* PROFILE CARD */
+
+.profile-card{
+background:linear-gradient(135deg,#667eea,#764ba2,#ff758c);
+border-radius:20px;
+color:white;
+}
+
+/* PROFILE AVATAR */
+
+.profile-avatar{
+font-size:80px;
+color:white;
+}
+
+/* EDIT PROFILE CARD */
+
+.profile-edit-card{
+border-radius:20px;
+}
+
+.profile-edit-card .card-header{
+background:linear-gradient(45deg,#667eea,#764ba2);
+}
+
+.nav-profile-img{
+width:32px;
+height:32px;
+border-radius:50%;
+object-fit:cover;
+border:2px solid white;
+}
+
+.profile-img{
+    width:40px;
+    height:40px;
+    object-fit:cover;
+    border-radius:50%;
+    border:2px solid white;
+}
+
+.profile-img-large{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid white;
+}
