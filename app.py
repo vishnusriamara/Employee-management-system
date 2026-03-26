@@ -166,7 +166,8 @@ def send_reset_link():
 
     if users:
         token=s.dumps(email,salt="Password-reset-salt")
-        link=f"http://localhost:5000/reset_password/{token}"
+        #link=f"http://localhost:5000/reset_password/{token}"
+        link=request.host_url+"reset_password/"+token
 
         msg=Message("Password reset request",
                     sender="vishnusriamara@gmail.com",
